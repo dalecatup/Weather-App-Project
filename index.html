@@ -3,10 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <title>Weather App🌡</title>
   </head>
   <body>
-    <h1>Weather App 🌡</h1>
+    <div class="weather-app">
+      <header>
+        <form id="city-search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-field"
+            id="city-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">Paris</h1>
+            <p class="current-info">
+              <span class="current-date-time"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="current-temp-emoji">☔</span>
+            <span class="current-temp-number">14</span>
+            <span class="current-temp-value">°C</span>
+          </div>
+        </div>
+      </main>
     <footer>
       <p>
         Project coded by
