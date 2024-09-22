@@ -63,26 +63,30 @@ form .search-button {
 .current-weather {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -50px;
 }
 .current-temp {
   color: #193327;
 }
 .current-temp-emoji {
-  font-size: 25px;
   position: relative;
-  top: -5px;
-  margin-right: 10px;
+  width: 69px;
+  height: 69px;
+  right: 65px;
+  bottom: -8px;
 }
+
 .current-temp-number {
   position: relative;
   font-size: 50px;
   font-weight: bold;
+  bottom: 61px;
 }
 .current-temp-value {
   font-size: 20px;
   font-weight: bold;
   position: relative;
-  top: -21px;
+  bottom: 83px;
 }
 footer {
   color: #393e46;

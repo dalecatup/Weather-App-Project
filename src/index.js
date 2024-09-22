@@ -5,6 +5,7 @@ function displayTemperature(response) {
   let humidityInfo = `${response.data.temperature.humidity}%`;
   let windSpeedInfo = `${response.data.wind.speed}km/h`;
   let timestamp = response.data.time;
+  let icon = `<img src="${response.data.condition.icon_url}" class="current-temp-emoji" />`;
 
   updateDateTime(timestamp);
 
@@ -22,6 +23,9 @@ function displayTemperature(response) {
 
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = windSpeedInfo;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = icon;
 }
 
 function formatDate(date) {
