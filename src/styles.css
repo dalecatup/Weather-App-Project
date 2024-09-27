@@ -63,7 +63,7 @@ form .search-button {
 .current-weather {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -50px;
+  margin-bottom: -55px;
 }
 .current-temp {
   color: #193327;
@@ -88,6 +88,47 @@ form .search-button {
   position: relative;
   bottom: 83px;
 }
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.weather-forecast {
+  border: 1px solid #f4f3f3;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+}
+
+.weather-forecast-date {
+  color: #919190;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.weather-forecast-icon {
+  font-size: 29px;
+  margin-top: 3px;
+}
+
+.weather-forecast-temp {
+  display: flex;
+  justify-content: center;
+  color: #118a7e;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.weather-forecast-temp-maxmin {
+  padding: 0 5px;
+  margin-top: 5px;
+  margin-bottom: -2px;
+  text-align: center;
+}
+
 footer {
   color: #393e46;
   font-family: "Didact Gothic", sans-serif;
