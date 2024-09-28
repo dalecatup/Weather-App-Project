@@ -45,17 +45,23 @@
         <div class="current-weather">
           <div>
             <h1 class="current-city"></h1>
+            <div class="current-temp">
+              <div id="icon"></div>
+              <span class="current-temp-number">14</span>
+              <span class="current-temp-value">°C</span>
+            </div>
+            <div class="condition-feel">
+              <div id="description"></div>
+              <br />
+              <div id="humidity-wind">
+                Humidity: <strong id="humidity"></strong> | Wind:
+                <strong id="wind-speed"></strong>
+              </div>
+              <div id="feels-like"></div>
+            </div>
             <p class="current-info">
-              <span id="current-date-time"></span>,
-              <span id="description"></span><br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind-speed"></strong>
+              <span id="current-date-time"></span>
             </p>
-          </div>
-          <div class="current-temp">
-            <div id="icon"></div>
-            <span class="current-temp-number">14</span>
-            <span class="current-temp-value">°C</span>
           </div>
         </div>
         <div class="forecast-container" id="forecast"></div>
@@ -66,7 +72,7 @@
           <a href="https://kumadesign.netlify.app/" target="_blank"
             >Marina Reggiani</a
           >
-          - opensourced on
+          - open-sourced on
           <a
             href="https://github.com/dalecatup/Weather-App-Project"
             target="_blank"

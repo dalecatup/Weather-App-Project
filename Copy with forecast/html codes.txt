@@ -1,0 +1,67 @@
+<div class="forecast-container">
+          <!-- Weather forecast block 1 -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Mon</div>
+              <div class="weather-forecast-icon">☀</div>
+              <div class="weather-forecast-temp">
+                <div class="weather-forecast-temp-maxmin">
+                  <strong>15</strong>
+                </div>
+                <div class="weather-forecast-temp-maxmin">9</div>
+              </div>
+            </div>
+          </div>
+          <!-- Weather forecast block 2 -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Tue</div>
+              <div class="weather-forecast-icon">☁</div>
+              <div class="weather-forecast-temp">
+                <div class="weather-forecast-temp-maxmin">
+                  <strong>18</strong>
+                </div>
+                <div class="weather-forecast-temp-maxmin">12</div>
+              </div>
+            </div>
+          </div>
+          <!-- Weather forecast block 3 -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Wed</div>
+              <div class="weather-forecast-icon">⛅</div>
+              <div class="weather-forecast-temp">
+                <div class="weather-forecast-temp-maxmin">
+                  <strong>20</strong>
+                </div>
+                <div class="weather-forecast-temp-maxmin">14</div>
+              </div>
+            </div>
+          </div>
+          <!-- Weather forecast block 4 -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Thu</div>
+              <div class="weather-forecast-icon">🌧</div>
+              <div class="weather-forecast-temp">
+                <div class="weather-forecast-temp-maxmin">
+                  <strong>16</strong>
+                </div>
+                <div class="weather-forecast-temp-maxmin">10</div>
+              </div>
+            </div>
+          </div>
+          <!-- Weather forecast block 5 -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Fri</div>
+              <div class="weather-forecast-icon">🌤</div>
+              <div class="weather-forecast-temp">
+                <div class="weather-forecast-temp-maxmin">
+                  <strong>22</strong>
+                </div>
+                <div class="weather-forecast-temp-maxmin">18</div>
+              </div>
+            </div>
+          </div>
+        </div>

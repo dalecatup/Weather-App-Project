@@ -1,5 +1,6 @@
 function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
+  let feelsLikeTemperature = Math.round(response.data.temperature.feels_like);
   let city = response.data.city;
   let descriptionSentence = response.data.condition.description;
   let humidityInfo = `${response.data.temperature.humidity}%`;
@@ -8,6 +9,9 @@ function displayTemperature(response) {
   let icon = `<img src="${response.data.condition.icon_url}" class="current-temp-emoji" />`;
 
   updateDateTime(timestamp);
+
+  descriptionSentence =
+    descriptionSentence.charAt(0).toUpperCase() + descriptionSentence.slice(1);
 
   let numberElement = document.querySelector(".current-temp-number");
   numberElement.innerHTML = `${temperature}`;
@@ -26,6 +30,9 @@ function displayTemperature(response) {
 
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = icon;
+
+  let feelsLikeElement = document.querySelector("#feels-like");
+  feelsLikeElement.innerHTML = `Feels like: ${feelsLikeTemperature}°`;
 
   getForecast(response.data.city);
 }
@@ -53,7 +60,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${currentDay} ${hours}:${minutes}`;
+  return `${currentDay}, ${hours}:${minutes}`;
 }
 
 function updateDateTime(timestamp) {
