@@ -110,8 +110,13 @@ form .search-button {
 }
 
 .weather-forecast-icon {
-  font-size: 29px;
   margin-top: 3px;
+  text-align: center;
+}
+
+.weather-forecast-icon img {
+  width: 59px;
+  height: 59px;
 }
 
 .weather-forecast-temp {
