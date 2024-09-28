@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather App🌡</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="city-search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-field"
+            id="city-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city"></h1>
+            <p class="current-info">
+              <span id="current-date-time"></span>,
+              <span id="description"></span><br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <div id="icon"></div>
+            <span class="current-temp-number">14</span>
+            <span class="current-temp-value">°C</span>
+          </div>
+        </div>
+        <div class="forecast-container" id="forecast"></div>
+      </main>
+      <footer>
+        <p>
+          Project coded by
+          <a href="https://kumadesign.netlify.app/" target="_blank"
+            >Marina Reggiani</a
+          >
+          - opensourced on
+          <a
+            href="https://github.com/dalecatup/Weather-App-Project"
+            target="_blank"
+            >Github</a
+          >
+          and hosted on
+          <a href="https://kuma-weatherapp.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
