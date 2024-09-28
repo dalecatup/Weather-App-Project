@@ -84,3 +84,31 @@ function defaultCity() {
 }
 
 defaultCity();
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="weather-forecast">  
+   <div class="weather-forecast-day">
+      <div class="weather-forecast-date">${day}</div>
+      <div class="weather-forecast-icon">☀</div>
+      <div class="weather-forecast-temp">
+        <div class="weather-forecast-temp-maxmin">
+            <strong>15</strong></div>
+        <div class="weather-forecast-temp-maxmin">9</div>
+        </div>
+   </div>
+  </div>
+  `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+displayForecast();
