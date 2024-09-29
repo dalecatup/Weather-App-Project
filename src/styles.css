@@ -17,14 +17,23 @@ form {
 .weather-app {
   background: #dfdfdf;
   max-width: 600px;
-  margin: 60px auto;
+  margin: 100px auto;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.247);
+  position: relative;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.39),
+      rgba(255, 255, 255, 0.39)
+    ),
+    url("../src/img/anime-style-clouds.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 form .search-field {
-  background-color: #f4f3f3;
+  background-color: rgba(255, 255, 255, 0.938);
   color: rgba(50, 68, 57, 0.4);
   border: none;
   font-size: 15px;
@@ -36,7 +45,7 @@ form .search-field {
 form .search-button {
   margin-left: 0 auto;
   font-size: 15px;
-  background-color: #3baea0;
+  background-color: #2772db;
   color: #fff;
   border: #fff;
   padding: 10px;
@@ -48,13 +57,13 @@ form .search-button {
 .current-city {
   font-family: "Questrial", sans-serif;
   font-size: 40px;
-  color: #193327;
+  color: #393e46;
   text-align: center;
   margin: 0;
 }
 
 .condition-feel {
-  color: #193327;
+  color: #393e46;
   text-align: center;
   padding: 5px;
   align-items: center;
@@ -80,11 +89,12 @@ form .search-button {
 }
 
 #humidity-wind strong {
-  color: #118a7e;
+  color: #0092ca;
 }
 
 .current-info {
-  color: #919190;
+  font-family: "Questrial", sans-serif;
+  color: #393e46;
   font-size: 14px;
   text-align: center;
   margin: 0;
@@ -98,13 +108,16 @@ form .search-button {
   align-items: center;
   gap: 2px;
   margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.76);
 }
 .current-temp {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2px;
-  color: #193327;
+  color: #393e46;
 }
 .current-temp-emoji {
   width: 69px;
@@ -140,7 +153,7 @@ form .search-button {
   border-radius: 10px;
   text-align: center;
   width: 80px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .weather-forecast-date {
@@ -162,7 +175,7 @@ form .search-button {
 .weather-forecast-temp {
   display: flex;
   justify-content: center;
-  color: #118a7e;
+  color: #0092ca;
   font-size: 14px;
   margin-top: 3px;
 }
@@ -184,6 +197,6 @@ footer {
   padding-top: 15px;
 }
 footer a {
-  color: #3baea0;
+  color: #2772db;
   font-weight: bold;
 }
