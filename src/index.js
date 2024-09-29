@@ -60,7 +60,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${currentDay}, ${hours}:${minutes}`;
+  return `📅 ${currentDay}, ${hours}:${minutes}`;
 }
 
 function updateDateTime(timestamp) {
